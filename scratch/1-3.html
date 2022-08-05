@@ -1,8 +1,14 @@
  <html>
             <head>
-                <script src="squeak.js"></script>
+                <script src="../squeak.js"></script>
               </head>
-  <body>
-   <a href="https://squeak.js.org/run/#image=/Scratch%201.3.image">hi</a>
+ <script>
+                    window.onload = function() {
+                        SqueakJS.runSqueak("my.image", sqCanvas, { /*put options here*/ });
+                    }
+                </script>
+            </head>
+            <body>
+                <canvas id="sqCanvas"></canvas>
             </body>
         </html>
